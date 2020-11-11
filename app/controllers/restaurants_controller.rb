@@ -17,7 +17,7 @@ class RestaurantsController < ApplicationController
       @restaurant.save!
       redirect_to restaurant_path(@restaurant)
     else
-      render "new"
+      render :new
     end
   end
 
